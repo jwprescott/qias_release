@@ -1,0 +1,93 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1.5cm,lmargin=1.5cm,rmargin=1.5cm}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{color}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{colortbl}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\noindent \begin{flushleft}
+\textbf{QUANTITATIVE IMAGE ANALYSIS SOFTWARE - BRAIN ATROPHY REPORT}
+\par\end{flushleft}
+
+\noindent \begin{flushleft}
+\textbf{PATIENT INFORMATION}
+\par\end{flushleft}
+
+\noindent \begin{flushleft}
+\begin{tabular}{|>{\raggedright}p{4cm}|>{\raggedright}p{6cm}|>{\raggedright}p{1cm}|>{\raggedright}p{2cm}|}
+\hline 
+{\footnotesize PATIENT ID: }\linebreak{}
+{\footnotesize PtIDVar} & {\footnotesize PATIENT NAME: }\linebreak{}
+{\footnotesize PtNameVar} & {\footnotesize SEX:}\linebreak{}
+{\footnotesize{} SexVar} & {\footnotesize AGE:}\linebreak{}
+{\footnotesize{} AgeVar}\tabularnewline
+\hline 
+{\footnotesize ACCESSION NUMBER:}\linebreak{}
+{\footnotesize{} AccNumVar} & {\footnotesize REFERRING PHYSICIAN:}\linebreak{}
+{\footnotesize RefVar} & \multicolumn{2}{>{\raggedright}p{4cm}|}{{\footnotesize EXAM DATE:}\linebreak{}
+{\footnotesize ExamDateVar}}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{flushleft}
+
+\noindent \begin{flushleft}
+\textbf{MORPHOMETRY ANALYSIS}
+\par\end{flushleft}
+
+\noindent \includegraphics[width=5.5cm,height=5.5cm,keepaspectratio,bb = 0 0 200 100, draft, type=eps]{HippAtrophyAxialImg}\includegraphics[width=5.5cm,height=5.5cm,keepaspectratio,bb = 0 0 200 100, draft, type=eps]{HippAtrophyCoronalImg}\includegraphics[width=5.5cm,height=5.5cm,keepaspectratio,bb = 0 0 200 100, draft, type=eps]{HippAtrophySagittalImg}
+
+\noindent %
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Hippocampal Occupancy Score (HOC)} & MeanHOCVar\tabularnewline
+\hline 
+\end{tabular}
+
+\noindent \begin{flushleft}
+\begin{tabular}{|c|c|>{\raggedright}m{4cm}|c|}
+\hline 
+\rowcolor[gray]{.8}\textbf{Brain Structure} & \textbf{Volume (cm3)} & \centering{}\textbf{\% of ICV}\linebreak{}
+\textbf{(5-95\% Normative percentile)} & \textbf{Normative Percentile}\tabularnewline
+\hline 
+\textbf{Hippocampi} & HippVolVar & \centering{}HippPercICVVar (Hipp5thPercVar, Hipp95thPercVar) & HippNormPercVar\tabularnewline
+\hline 
+\textbf{Lateral Ventricles} & LatVentVolVar & \centering{}LatVentPercICVVar (LatVent5thPercVar, LatVent95thPercVar) & LatVentNormPercVar\tabularnewline
+\hline 
+\textbf{Inferior Lateral Ventricles} & InfLateralVentVolVar & \centering{}InfLateralVentPercICVVar (InfLateralVent5thPercVar, InfLateralVent95thPercVar) & InfLateralVentNormPercVar\tabularnewline
+\hline 
+\end{tabular}
+\par\end{flushleft}
+
+\noindent \begin{flushleft}
+\textbf{AGE-MATCHED REFERENCE CHARTS}
+\par\end{flushleft}
+
+\noindent \begin{flushleft}
+\includegraphics[width=6.15cm,height=6.15cm,keepaspectratio,bb = 0 0 200 100, draft, type=eps]{HippAtrophyPlot}\includegraphics[width=6.15cm,height=6.15cm,keepaspectratio,bb = 0 0 200 100, draft, type=eps]{MeanHOCPlot}\includegraphics[width=6.15cm,height=6.15cm,keepaspectratio,bb = 0 0 200 100, draft, type=eps]{InfLateralVentPlot}
+\par\end{flushleft}
+
+\vspace*{\fill}
+ICV = Intracranial Volume
+\par
+Not FDA approved
+\par
+Not for diagnostic use
+
+\end{document}
